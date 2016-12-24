@@ -1,0 +1,20 @@
+#################
+## Application
+#################
+/vendor/
+
+#################
+## Vagrant/Puppet
+#################
+.vagrant
+puphpet/files/dot/ssh/id_rsa*
+puphpet/files/dot/ssh/root_id_rsa*
+
+#################
+## PHPStorm
+#################
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+**/.idea/deployment.xml
+**.iws
+**.idea/dictionaries

@@ -1,0 +1,21 @@
+{
+    "name": "zzbomb/AlexaJarvis",
+    "description": "A custom alexa service",
+    "keywords": ["alexa", "rest", "ingress"],
+    "homepage": "https://github.com/zzbomb/AlexaJarvis",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Spaetzel",
+            "email": "john.spaetzel@gmail.com",
+            "homepage": "http://johnspaetzel.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1"
+    },
+	"scripts": {
+        "start": "php -S 0.0.0.0:8080 -t public public/index.php"
+	}
+}
