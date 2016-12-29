@@ -2,6 +2,7 @@
 return [
     'settings' => [
         'displayErrorDetails' => true, // set to false in production
-        'addContentLengthHeader' => false, // Allow the web server to send the content-length header
+        'determineRouteBeforeAppMiddleware' => true, // make middleware aware of routes
+        'addContentLengthHeader' => false, // allow content outside the slim response object, such as var_dump and echo
     ],
 ];

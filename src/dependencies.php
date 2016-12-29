@@ -3,6 +3,6 @@
 
 $container = $app->getContainer();
 
-$container['Controllers\checkpoints'] = function ($c) {
+$container['controllers\checkpoints'] = function ($c) {
     return new controllers\checkpoints($c['router']);
 };

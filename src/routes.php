@@ -1,7 +1,7 @@
 <?php
 // Routes
 
-$app->post('/alexa/getCheckpoint[/]', 'controllers\checkpoints:alexaGetCheckpoint')->setName('alexaCheckpoint');
+$app->post('/get_checkpoint[/]', 'controllers\checkpoints:alexaGetCheckpoint')->setName('alexaCheckpoint');
 
 
 
