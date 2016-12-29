@@ -1,11 +1,11 @@
 <?php
-namespace controllers;
+namespace Controllers;
 
 use DateTime;
 use Psr\Http\Message\RequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
-final class checkpoints extends controllers
+final class Checkpoints extends Controllers
 {
     public function alexaGetCheckpoint(Request $request, Response $response, $args)
     {

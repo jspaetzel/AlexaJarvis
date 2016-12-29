@@ -1,10 +1,10 @@
 <?php
+namespace Controllers;
 
-namespace controllers;
 use Slim\Router;
 
-class controllers {
-
+class Controllers
+{
     protected $router;
 
     public function __construct(Router $router)
