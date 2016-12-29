@@ -45,7 +45,7 @@ class SignatureCertificateVerificationMiddleware
      */
     private function getCertificate(Request $request)
     {
-        $signatureChainUri = $request->getHeader(self::CERTIFICATE_URL_HEADER);
+        $signatureChainUri = $request->getHeader(self::CERTIFICATE_URL_HEADER)[0];
         $this->validateKeychainUri($signatureChainUri);
         $certificate = $this->certificateProvider->getCertificateFromUri($signatureChainUri);
         return $certificate;
@@ -78,7 +78,7 @@ class SignatureCertificateVerificationMiddleware
      */
     private function getDecodedSignature(Request $request)
     {
-        $signature = $request->getHeader(self::SIGNATURE_HEADER);
+        $signature = $request->getHeader(self::SIGNATURE_HEADER)[0];
         $base64DecodedSignature = base64_decode($signature);
         return $base64DecodedSignature;
     }
